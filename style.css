@@ -116,6 +116,7 @@ body {
   letter-spacing: 2px;
 }
 .submitInner:hover {
+  cursor: pointer;
   background-color: hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
 }
