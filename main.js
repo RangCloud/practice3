@@ -1,14 +1,15 @@
 const submitBtn = document.getElementById("submitButton");
 const thankBox = document.querySelector(".thankYouBox");
-const numberSelect = document.querySelector(".numBtn");
+const numberSelect = document.querySelector(".numBtn"); // 숫자 누를 때
+const numberCheck = document.getElementById("selectNumber"); // 숫자 결과
 
 submitBtn.addEventListener("click", submitFn);
-numberSelect.addEventListener("click", numSelectFn);
 
 function submitFn() {
     thankBox.style.display = "block";
 };
 
-function numSelectFn(){
-
-}
+numberSelect.addEventListener('click', ()=>{
+    document.style.backgroundColor = "hsl(217, 12%, 63%)";
+    document.style.color = "white";
+})
